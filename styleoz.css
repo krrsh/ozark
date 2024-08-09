@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    .bruno-ace sc-regular {
+        font-family: "Bruno Ace SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }      
+}
+.title a{
+    text-decoration: none;
+    color: darkslategrey;
+}
+.title{
+    margin: 30px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.side-nav{
+    margin-right: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.side-nav a{
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.side-nav a:hover{
+    text-decoration: underline;
+}
+#bar{
+    display: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.left-nav{
+    left: -50%;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-color: darkslategrey;
+    align-items: center;
+    margin-bottom: 10px;
+    top: 0%;
+    transition: 1s;
+    z-index: 1;
+}
+
+.left-nav a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+    display: flex;
+}
+.a{
+    margin-bottom: 20px;
+}
+#xmark{
+    text-align: right;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mid-section{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divulla{
+    margin: 10px;
+}
+#shpnowBtn{
+    padding: 10px;
+    background-color: darkslategrey;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add smooth transition */
+    display: inline-block;
+}
+#shpnowBtn:hover{
+    transform: scale(1.2); /* Increase scale to zoom in */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mid2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.mid2 h1{
+    width: 300px;
+    margin-left: 10px;
+}
+.mid2 p{
+    padding-right: 10px;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxes div{
+    width: 30%;
+    background-color:rgba(47, 79, 79, 0.3);
+    padding: 10px;
+    margin-top: 5px;
+}
+.newArr{
+    padding: 15px;
+}
+.arrBoxes{
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.arrBoxes div{
+    cursor: pointer;
+    position: relative;
+}
+
+.arrBoxes div:hover{
+    transform: scale(1.2); /* Increase scale to zoom in */
+    transition: transform 0.3s ease; /* Add smooth transition */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.arrBoxes div:hover button{
+    display: block;
+}
+.arrBoxes button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(52, 75, 75, 0.9);
+    position: absolute;
+    right: 25%;
+    bottom: 10%;
+    display: none;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    padding-top: 50px;
+    margin: 10px;
+}
+.emailinput{
+    width: 70%;
+    border-radius: 2px;
+    border: solid black 2px;
+    align-items: center;
+}
+
+.sbsBtn{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: darkslategrey;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add smooth transition */
+    display: inline-block;
+}
+.sbsBtn:hover{
+    transform: scale(1.2); /* Increase scale to zoom in */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.footer2{
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgba(47, 79, 79, 0.3);
+    height: 100%;
+}
+.collfooter{
+    margin-top: 60px;
+    padding: 20px;
+    background-color: rgba(47, 79, 79, 0.3);
+    height: 100%;
+}
+
+
+
+.searchcontainer{
+
+    text-align: center;
+    position: relative;
+    margin-left: 12%;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: solid black 2px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.searchbar{
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+
+.collarrBoxes{
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.collarrBoxes div{
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.collarrBoxes h3{
+    z-index: 1;
+    text-align: center;
+}
+
+.collarrBoxes div img:hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.collarrBoxes div img{
+    border-radius: 10px;
+}
+
+.coll{
+    margin-top: 20px;
+    padding: 15px;
+}
+/* .collarrBoxes img{
+    justify-content: center;
+} */
+
+
+.contactbox{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 50%;
+    background-color:  rgba(47, 79, 79, 0.3);
+    margin-top: 100px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.contactbox input{
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contactbox button{
+    background-color:  darkslategrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    #bar{
+        display: block;
+    }
+    .side-nav{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .boxes{
+        display: block;
+    }
+    .boxes div{
+        width: 93%;
+        background-color:rgba(47, 79, 79, 0.3);
+        padding: 10px;
+        margin: 10px;
+    }
+    .mid2{
+        display: block;
+    }
+    .mid2 p{
+        font-size: large;
+        padding-left: 20px;
+    }
+    .mid2 h1{
+        padding: 10px;
+    }
+    
+}
+
